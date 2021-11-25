@@ -1,0 +1,85 @@
+
+:root
+{
+   --height-bar:2rem;
+   --width-menu:15rem;
+   --font-size:1.2rem;
+   --font-size-input:1.2rem;
+   --font-size-title:1.5rem;
+   --font-size-titleP:2rem;
+   --height-bannner:10rem;
+   --height-image-office:10rem;
+   --height-image-product:13rem;
+   --color1:#bc6c25;
+   --color2:#eae2b7; 
+   --color-letra-barra:#eae2b7;
+   --color-letra-titulos:#774936;
+   --color-letra-titulos2:#8d6443fd;  
+   --color-letra-parrafo:var(--color-letra-titulos2);
+   --color-letra-menu-movil:var(--color-letra-titulos2);
+
+
+   --margin-bottom-office:1rem;
+   --margin-bottom-Product:1rem;
+   --office-Cantidad-Elementos:1;
+   --product-Cantidad-Elementos:1;
+   --flex-basic-office: calc( calc(100% / var(--office-Cantidad-Elementos)) - calc(  calc( var(--margin-bottom-office) * calc( var(--office-Cantidad-Elementos) - 1) ) / var(--office-Cantidad-Elementos)));
+   --flex-basic-product:calc( calc(100% / var(--product-Cantidad-Elementos))   - calc(  calc( var(--margin-bottom-Product) * calc( var(--product-Cantidad-Elementos) - 1) ) / var(--product-Cantidad-Elementos)));
+   --image-product-width:100%;
+   --tilteP-height:3rem;
+}
+
+main
+{
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: var(--height-bar);
+}   
+
+*
+{
+   box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+body{
+    margin: 0;  
+    font-size: var(--font-size); 
+    position: relative;
+ }
+
+ body::after
+{
+    content: '';
+    background-image: url('../images/background.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+footer
+{
+    background: var(--color2);
+}

@@ -1,0 +1,135 @@
+
+@media screen and (min-width:600px) 
+{   
+    :root
+    {
+        --height-bar:3rem;
+        --height-bannner:11rem;
+        --office-Cantidad-Elementos:2;
+        --product-Cantidad-Elementos:2;
+        --image-product-width:40px;
+        --font-size-titleP:2.3rem;
+    }
+
+}
+
+@media screen and (min-width:960px) {
+    :root
+    {
+   
+        --height-bannner:14rem;
+        --product-Cantidad-Elementos:3;
+        --margin-bottom-Product:0.5rem;
+        
+    }
+    .contact-form
+    {
+        flex-basis: 50%;
+    }
+    
+    
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-image
+    {
+        flex-basis: 45%;
+        display:block;
+       
+    }
+
+    .image-contact
+    {
+        width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width:1280px) 
+{
+
+    :root
+    {    
+        --office-Cantidad-Elementos:4;
+        --height-image-office:16rem;
+        --height-bannner:30rem;
+        --height-image-product:17rem;
+        --image-product-width:17rem;      
+        --font-size:1.4rem;
+        --font-size-input:1.4rem;
+        --font-size-title:1.8rem;
+    }
+
+    .contact-form
+    {
+        flex-basis: 60%;
+    }
+    
+    body::after
+    {
+        background-size: 800px;
+    }
+
+    .link-menu{
+        display: none;
+    }
+
+    .content-menu__list
+    {
+        position: fixed;
+        z-index: 500;
+        height: var(--height-bar);     
+        top: 0;
+        background: none;
+    }
+
+    .menu__list{
+        position: absolute;       
+        width: 100%;
+        background: none;  
+        display: flex;
+        padding: 0;
+        left:0
+      
+    }
+
+    .menu__list__item{
+        color: var(--color2);
+        margin-left: 2rem; 
+        margin-top: 0;
+    }
+
+    .menu__list__item a{ 
+     
+        line-height: var(--height-bar);
+    }
+
+   
+    body
+    {
+        margin: 0 auto;
+    }   
+
+
+    .content-banner
+    {
+        padding: var(--tilteP-height) 1rem 1rem;
+    }
+
+    .btn{
+       
+        top:90%;
+        height: 40px;
+        width: 10rem;
+        line-height: 40px;
+       
+    }
+
+    .menu__list__item a {
+        color:var( --color-letra-barra);
+    }
+}

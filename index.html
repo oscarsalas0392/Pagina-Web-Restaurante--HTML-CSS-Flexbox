@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <title>Restaurante</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Restaurante de hamburguesas">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/base.css"/>
+      <link rel="stylesheet" href="css/index.css"/>
+      <link rel="stylesheet" href="css/responsive.css"/>
+      <script src="js/script.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="menu">                             
+                    <a id="bar-menu" class="link-menu"><i class="fa fa-bars icon-menu"></i></a> 
+                           <div id="content-menu__list" class="content-menu__list">
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="index.html">Inicio</a></li>
+                    <li class="menu__list__item"><a href="">Menu</a></li>
+                    <li class="menu__list__item"><a href="">Nosotros</a></li>
+                </ul>
+            </div>           
+            </nav>
+     
+        </header>
+
+        <main>
+            <div class="content-banner">
+                <img class="banner" id="baner"  src="images/banner.jpg" alt="bannner" >
+                <h1 class="titleP">Burger SHOP</h1>
+                <a class="btn">Ver más</a>
+            </div>
+
+            <div class="content-information">              
+                <div class="content-office">                   
+                    <h2 class="title">Tiendas</h2>
+                    <div class="content-offices">
+
+                        <figure class="office">
+                            <img class="office-image"  src="images/office1.png" alt="tienda Heredia" >
+                            <figcaption class="office-text">Heredia</figcaption>
+                        </figure>
+                  
+               
+                        <figure class="office">
+                            <img class="office-image"  src="images/office2.png" alt="tienda San Jose" >
+                            <figcaption class="office-text">San José</figcaption>
+                        </figure>
+              
+
+                   
+                        <figure class="office">
+                            <img class="office-image"  src="images/office3.jpg" alt="tienda Alajuela" >
+                            <figcaption class="office-text">Alajuela</figcaption>
+                        </figure>
+                   
+               
+                        <figure class="office">
+                            <img class="office-image"  src="images/office4.jpg" alt="tienda Cartago" >
+                            <figcaption class="office-text">Cartago</figcaption>
+                        </figure> 
+                    </div>                         
+                </div>
+
+                <div class="content-products">
+                    <h2 class="title">Galeria</h2>
+
+                    <div class="content-images" id="content-images">
+
+                        <figure class="content-image">
+                            <img class="image-product"  src="images/product1.jpg" alt="product" >
+                            <figcaption data-precio="3000" data-moneda="₡">Bacon Burger</figcaption>
+                        </figure>
+
+                          
+                        <figure  class="content-image">
+                            <img class="image-product"  src="images/product2.jpg" alt="product" >
+                            <figcaption data-precio="5300" data-moneda="₡">Doble Infarto</figcaption>
+                        </figure>
+
+
+                        <figure class="content-image">
+                            <img class="image-product"  src="images/product3.jpg" alt="product" >
+                            <figcaption data-precio="5700" data-moneda="₡">Muerta de Hambre</figcaption>
+                        </figure>
+
+
+                        <figure class="content-image">
+                            <img class="image-product"  src="images/product4.jpg" alt="product" >
+                            <figcaption data-precio="4800" data-moneda="₡">Media Parrilla</figcaption>
+                        </figure>
+
+                        <figure class="content-image">
+                            <img class="image-product"  src="images/product5.jpg" alt="product" >
+                            <figcaption data-precio="5200" data-moneda="₡">Paro Cardiaco</figcaption>
+                        </figure>
+
+                        <figure class="content-image">
+                            <img class="image-product"  src="images/product6.jpg" alt="product" >
+                            <figcaption data-precio="3800" data-moneda="₡">Doble Torta</figcaption>
+                        </figure>
+
+                        <figure class="content-image">
+                            <img class="image-product"  src="images/product7.jpg" alt="product" >
+                            <figcaption data-precio="2700" data-moneda="₡">Sencilla</figcaption>
+                        </figure>
+                        
+                        
+                        <figure class="content-image">
+                            <img class="image-product"  src="images/product8.jpg" alt="product" >
+                            <figcaption data-precio="4000" data-moneda="₡">Chicken Bufalo</figcaption>
+                        </figure>
+                       
+                                
+                    </div>
+                </div>
+
+
+                <div class="content-contact">
+                    
+                    <h2 class="title">Contáctenos</h2>
+                   
+                    <div class="contact">
+                        <div class="contact-image">
+                            <img class="image-contact" src="images/contact.jpeg" alt="Contactenos"/>
+                        </div>
+                        <form class="contact-form">                            
+                            <div class="form-group">
+                                <label class="form-text" for="name">Nombre</label>
+                                <input required id="name" type="text" >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-text" for="email">Correo</label>
+                                <input required id="email" type="email" >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-text-mensaje"  for="mensaje" >Mensaje</label>
+                                <textarea required id="mensaje" rows="5" cols="9" ></textarea>
+                            </div>
+
+                            <input type="submit" class="btn-enviar" id='Enviar' value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+       <footer class="footer">
+         <p class="title footer">Realizado por Oscar Salas Miranda</p>
+      </footer>
+        
+    </body>
+
+</html>
